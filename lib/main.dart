@@ -7,8 +7,10 @@ import 'package:shop_udemy/screens/orders_screen.dart';
 import 'provider/cart.dart';
 import 'provider/orders.dart';
 import 'screens/cart_screen.dart';
+import 'screens/edit_product_screen.dart';
 import 'screens/product_detail_screen.dart';
 import 'screens/prouducts_overview_screen.dart';
+import 'screens/user_products_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -40,6 +42,8 @@ class MyApp extends StatelessWidget {
             OrdersScreen.routeName: (ctx) => OrdersScreen(),
             ProductDetailScreen.routeName: (ctx) => ProductDetailScreen(),
             CartScreen.routeName: (ctx) => CartScreen(),
+            UserProductsScreen.routeName: (ctx) => UserProductsScreen(),
+            EditProductScreen.routeName: (ctx) => EditProductScreen(),
           }),
     );
   }
